@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/instagram-businesses",
+      "handler": "instagram-business.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/instagram-businesses/count",
+      "handler": "instagram-business.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/instagram-businesses/:id",
+      "handler": "instagram-business.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/instagram-businesses",
+      "handler": "instagram-business.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/instagram-businesses/:id",
+      "handler": "instagram-business.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/instagram-businesses/:id",
+      "handler": "instagram-business.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

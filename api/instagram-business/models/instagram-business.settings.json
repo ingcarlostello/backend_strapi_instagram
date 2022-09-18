@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instagram_businesses",
+  "info": {
+    "name": "instagramBusiness",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "instagramUser": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "province": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "webPage": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "biginteger",
+      "required": false
+    }
+  }
+}
